@@ -12,8 +12,9 @@
 </head>
 <body>
   <!-- TODO: 
-    1. modal : html / css
-    2. js
+    1. time line page
+    2. modal : html / css
+    3. js
   -->
   <div class="wrapper">
     <header id="header">
@@ -27,7 +28,7 @@
     </header>
     <section class="contents">
       <nav id="nav">
-        <div class="nav-item nav-lists show">
+        <div class="nav-item nav-lists ">
           <h3 class="header">LIST</h3>
           <ul class="items">
             <li class="item">title1</li>
@@ -39,18 +40,19 @@
             <li class="item">title5</li>
             <li class="item">title5</li>
           </ul>
+          <button class="btn add-list">
+            <span class="material-icons">add</span>Add List
+          </button>
         </div>
-        <div class="nav-item nav-timeLine">
+        <div class="nav-item nav-timeLine show">
           <h3 class="header">TIME LINE</h3>
         </div>
         
-        <button class="btn add-list">
-          <span class="material-icons">add</span>Add List
-        </button>
+        
       </nav>
       <div class="content">
         <h2 class="content-title">title1</h2>
-        <div class="content-box">
+        <div class="content-box list-content">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda autem quas sequi. Recusandae dolorum odio ipsam officia commodi molestiae optio assumenda! Quis, sequi expedita. Explicabo porro est ut natus.
             Perspiciatis ullam suscipit reprehenderit facilis obcaecati rerum nisi quasi. Voluptatem laudantium similique eius! Incidunt consequatur atque, repellendus, iure placeat illo ipsam nam, sapiente perferendis quae temporibus. Impedit reiciendis odio optio.
@@ -67,6 +69,20 @@
             <span class="material-icons">remove</span>
             Remove
           </button>
+        </div>
+        <div class="content-box content-add visual">
+          <h4>Title</h4>
+          <form >
+            <input type="text" class="title" placeholder="Title">
+            <h4>Content</h4>
+            <textarea class="content-item" placeholder="Content"></textarea>
+            <button class="btn add-list" type="submit">
+              <span class="material-icons">add</span>Add List
+            </button>
+          </form>
+        </div>
+        <div class="content-box timeline-content">
+
         </div>
       </div>
     </section>
