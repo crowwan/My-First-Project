@@ -6,27 +6,70 @@
   <title>My First Project</title>
 
   <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header id="header">
-    <div class="container">
-      <a href="./" class="logo"></a>
+  <!-- TODO: 
+    1. modal : html / css
+    2. js
+  -->
+  <div class="wrapper">
+    <header id="header">
+      <a href="./" class="logo">My First Project</a>
       <ul class="menu">
-        <li>Log in</li>
-        <li>Lists</li>
-        <li>Time Line</li>
-        <li>Sign in</li>
+        <li class = 'login'>Log in</li>
+        <li class = 'lists'>Lists</li>
+        <li class = 'timeLine'>Time Line</li>
+        <li class = 'signin'>Sign in</li>
       </ul>
-    </div>
-  </header>
-  <section class="contents">
-    <div class="container">
+    </header>
+    <section class="contents">
       <nav id="nav">
+        <div class="nav-item nav-lists show">
+          <h3 class="header">LIST</h3>
+          <ul class="items">
+            <li class="item">title1</li>
+            <li class="item">title2</li>
+            <li class="item">title3</li>
+            <li class="item">title4</li>
+            <li class="item">title5</li>
+            <li class="item">title5</li>
+            <li class="item">title5</li>
+            <li class="item">title5</li>
+          </ul>
+        </div>
+        <div class="nav-item nav-timeLine">
+          <h3 class="header">TIME LINE</h3>
+        </div>
         
+        <button class="btn add-list">
+          <span class="material-icons">add</span>Add List
+        </button>
       </nav>
-      <div class="content"></div>
-    </div>
-  </section>
+      <div class="content">
+        <h2 class="content-title">title1</h2>
+        <div class="content-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda autem quas sequi. Recusandae dolorum odio ipsam officia commodi molestiae optio assumenda! Quis, sequi expedita. Explicabo porro est ut natus.
+            Perspiciatis ullam suscipit reprehenderit facilis obcaecati rerum nisi quasi. Voluptatem laudantium similique eius! Incidunt consequatur atque, repellendus, iure placeat illo ipsam nam, sapiente perferendis quae temporibus. Impedit reiciendis odio optio.
+            Nostrum alias, labore placeat id aut vitae quod saepe ipsam repudiandae nulla, impedit officiis tempore facilis, deleniti soluta? Tenetur repellendus magnam impedit, temporibus placeat architecto unde eos doloremque blanditiis repellat!
+            Mollitia fuga nesciunt consequatur earum quae ut. Ipsum veniam voluptates quia dicta maxime ipsa nihil reprehenderit? Totam maiores quae vel ducimus id voluptatem, dolores placeat earum culpa, sapiente voluptatum. Repellat!
+            Reiciendis vero necessitatibus error natus atque ab alias dolorem itaque minus cupiditate, omnis dolores quod debitis culpa corrupti enim, iusto voluptate veritatis quaerat accusamus asperiores. Eum, deserunt rem! Eius, reprehenderit.
+            Porro temporibus assumenda iste quae asperiores cumque. Possimus amet esse perferendis ducimus cum eum repellendus laudantium neque facilis voluptatibus, assumenda doloribus molestias fugiat, accusantium repudiandae dolore placeat aspernatur, iste quaerat.
+            Inventore illo doloremque, accusantium amet culpa dolore quibusdam quisquam tempore eaque ullam. Deleniti qui, facilis in excepturi, a repellendus impedit quasi temporibus eveniet at cumque vel quibusdam recusandae voluptate dolores?
+            Facilis libero ut hic doloribus porro deserunt ad, totam enim vitae velit, quas temporibus iusto quo cum quidem quos. Laboriosam dicta perferendis labore modi itaque eos! Dolore et odio error?
+            Ad, voluptate sit? Maxime, hic. Aperiam cumque excepturi sed error natus asperiores qui voluptate quaerat! Suscipit, ullam nulla, aut consectetur officiis temporibus voluptatum commodi explicabo iusto sapiente tempora doloribus aperiam.
+            Tenetur, quia, quisquam tempore architecto illo molestias veritatis iusto ipsum rem, ratione cumque quidem. Veniam reprehenderit eligendi ab aspernatur, ratione saepe ipsa, similique nemo iste laboriosam rerum inventore recusandae facilis.
+          </p>
+          <button class="btn remove-list">
+            <span class="material-icons">remove</span>
+            Remove
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
