@@ -13,8 +13,7 @@
 <body>
   <!-- TODO: 
     1. time line page
-    2. modal : html / css
-    3. js
+    2. js
   -->
   <div class="wrapper">
     <header id="header">
@@ -23,22 +22,14 @@
         <li class = 'login'>Log in</li>
         <li class = 'lists'>Lists</li>
         <li class = 'timeLine'>Time Line</li>
-        <li class = 'signin'>Sign in</li>
+        <li class = 'signup'>Sign up</li>
       </ul>
     </header>
     <section class="contents">
       <nav id="nav">
-        <h3 class="header">LIST</h3>
-        <div class="nav-item nav-lists show">
+        <h3 class="header"></h3>
+        <div class="nav-item nav-lists">
           <ul class="items">
-            <li class="item">title1</li>
-            <li class="item">title2</li>
-            <li class="item">title3</li>
-            <li class="item">title4</li>
-            <li class="item">title5</li>
-            <li class="item">title5</li>
-            <li class="item">title5</li>
-            <li class="item">title5</li>
           </ul>
           <button class="btn add-list">
             <span class="material-icons">add</span>Add List
@@ -47,7 +38,7 @@
       </nav>
       <div class="content">
         <h2 class="content-title"></h2>
-        <div class="content-box list-content visual">
+        <div class="content-box list-content">
           <p></p>
           <button class="btn remove-list">
             <span class="material-icons">remove</span>
@@ -56,7 +47,7 @@
         </div>
         <div class="content-box content-add ">
           <h4>Title</h4>
-          <form >
+          <form>
             <input type="text" class="title" placeholder="Title">
             <h4>Content</h4>
             <textarea class="content-item" placeholder="Content" style="font-family: sans-serif;"></textarea>
@@ -65,8 +56,28 @@
             </button>
           </form>
         </div>
-        <div class="content-box timeline-content">
-
+        <div class="content-box timeline-content"></div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="container">
+        <div class="login modal-box">
+          <h3 class="title">LOG IN</h3>
+          <form>
+            <input type="text" class="username" placeholder="username">
+            <p class='error'>INVALID LOG IN</p>
+            <input type="password" class="password" placeholder="password">
+            <button class="btn btn__login" type="submit">Log in</button>
+          </form>
+        </div>
+        <div class="signup modal-box">
+          <h3 class="title">SIGN UP</h3>
+          <form>
+            <input type="text" class="username"placeholder ="username">
+            <p class="error">SIGN UP ERROR</p>
+            <input type="password" class="password" placeholder="password">
+            <button class="btn btn__signup">Sign up</button>
+          </form>
         </div>
       </div>
     </section>
